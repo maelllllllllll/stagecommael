@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Compte rendu stage communication</title>
+    <link rel="stylesheet" href="style.css">
+	<meta name="description" content="Journal de stage en communication avec compte rendu quotidien détaillé">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="fade">
+
+    <h1>Mercredi 17</h1>
+    <p> Arrivée à 8h, heureusement Guillaume arrivait tôt aussi.</p>
+	<p> Match France la veille, rédaction petit article en bilan du match. </p>
+<div class="jours">
+   <a href="fr_sngl.pdf" target="_blank"> mini article</a>
+</div>
+<div class="jours">
+<p> -jardin avec Guillaume, me montre des photos à dispo des gens </p>
+    <a href="cmpte_rendu_stgcom.html">⬅ Retour</a>
+</div>
+
+    <script>
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const url = this.href;
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500);
+        });
+    });
+    </script>
+
+</body>
+</html>

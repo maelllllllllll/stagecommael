@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css"/>
+		<title>Le Stage de Maël à la com des Herbiers</title>
+		<meta name="description" content="Journal de stage en communication avec compte rendu quotidien détaillé">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body class="fade">
+		<div class="stripes">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+    <header>
+        <h1>Le Stage de Maël à la com des Herbiers</h1>
+        <p>2 semaines dans les coulisses du service communication</p>
+    </header>
+
+<h2> Bilans structurés </h2>
+    <main>
+        <section class="jours">
+
+    <div class="container-semaines">
+
+        <div class="semaine">
+            <h2>Semaine 1</h2>
+            <div class="ligne">
+                <a href="jour1.html">Jour 1</a>
+                <a href="jour2.html">Jour 2</a>
+                <a href="jour3.html">Jour 3</a>
+                <a href="jour4.html">Jour 4</a>
+                <a href="jour5.html">Jour 5</a>
+            </div>
+        </div>
+
+        <div class="trait-vertical"></div>
+
+        <div class="semaine">
+            <h2>Semaine 2</h2>
+            <div class="ligne">
+                <a href="jour6.html">Jour 6</a>
+                <a href="jour7.html">Jour 7</a>
+                <a href="jour8.html">Jour 8</a>
+                <a href="jour9.html">Jour 9</a>
+                <a href="jour10.html">Jour 10</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+    </main>
+<script>
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const url = this.href;
+
+        document.body.classList.add("fade-out");
+
+        setTimeout(() => {
+            window.location.href = url;
+        }, 500);
+    });
+});
+</script>
+</body>
+</html>
+<title>Compte rendu stage communication</title>

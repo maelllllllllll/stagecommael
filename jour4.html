@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Compte rendu stage communication</title>
+    <link rel="stylesheet" href="style.css">
+	<meta name="description" content="Journal de stage en communication avec compte rendu quotidien détaillé">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="fade">
+
+    <h1>Jeudi 18</h1>
+    <h2>MATIN </h2>
+	<p> -Réunion d’infos le matin avec tt le monde + JuJu et FX </p> 
+	<p> -Fx leader: chef, il balance les infos demandées </p>
+	<p> -Rédaction d’un article sur l’escape game du service jeunesse. </p>
+	<h2> APREM </h2>
+
+
+
+<div class="jours">
+    <a href="cmpte_rendu_stgcom.html">⬅ Retour</a>
+</div>
+
+    <script>
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const url = this.href;
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500);
+        });
+    });
+    </script>
+
+</body>
+</html>
