@@ -10,23 +10,7 @@ header {
     gap: 20px;
 }
 
-.jours a,a.btn {
-    text-decoration: none;
-    background: white;
-    color: #333;
-    padding: 20px 30px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
 
-.jours a:hover {
-    transform: scale(1.1);
-    background: #f7f5f5;
-	
-
-
-    animation: shine 6s infinite;
-}
 @keyframes shine {
     0% {
         transform: translateX(-50%) translateY(-50%);
@@ -61,18 +45,7 @@ header {
         rgba(255, 255, 255, 0.6),
         transparent
     );
-}
-.jours a {
-    position: relative;
-    text-decoration: none;
-    background: rgba(255, 255, 255, 0.9);
-    color: #333;
-    padding: 20px 30px;
-    border-radius: 12px;
-    transition: 0.3s;
-    backdrop-filter: blur(5px);
-    overflow: hidden;
-}
+
 .container-semaines {
     display: flex;
     justify-content: center;
@@ -175,4 +148,24 @@ html, body {
 }
 	* {
     box-sizing: border-box;
+}
+.jours a, a.btn {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #333;
+    background: rgba(255, 255, 255, 0.9);
+
+    padding: 15px 25px;
+    border-radius: 12px;
+
+    transition: transform 0.2s ease, background 0.2s ease;
+
+    /* stabilité */
+    transform-origin: center;
+}
+
+.jours a:hover {
+    transform: translateY(-3px); /* effet propre sans bug */
+    background: #f2f2f2;
 }
