@@ -95,3 +95,8 @@ body {
     transform: translateY(-3px);
     background: #f2f2f2;
 }
+.btn-etudes {
+    background: #ffffff;
+    color: #610701;
+    font-weight: bold;
+}
