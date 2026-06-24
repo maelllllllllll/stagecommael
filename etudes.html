@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Études des collègues</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="fade">
+
+    <h1> Différents cursus d'études </h1>
+
+    <div class="contenu">
+        <h2> Présentation des parcours :</h2>
+	<h3> Journalisme </h3>
+        <p>-Bac ES + découverte journal d’école. Création journal local, postule mais pas formation. Pris par la suite, carte de presse. Fermeture du journal, création journal en ligne pour la ville des Herbiers. </p>
+	<h3> Graphisme </h3> 
+	<p>- Ecole de graphisme en 2 ans puis imprimerie. </p>
+	<p> -Bac STSS+ MANAA (mise à niveau art appliqué)+ BTS mode + 1an BTS stand packaging, License pro design packaging  alternance + License pro communication </p>
+    <h3> Digital(isme) </h3>
+	<p> -License Anglais + spécialité Info/com Master </p>
+	<p> -Bac L+ DUT Info+ License+ Master (tout dans la com) </p>
+	
+	</div>
+
+    <div class="jours">
+        <a href="index.html"> Retour</a>
+    </div>
+
+    <script>
+    document.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", function(e) {
+            e.preventDefault();
+            const url = this.href;
+
+            document.body.classList.add("fade-out");
+
+            setTimeout(() => {
+                window.location.href = url;
+            }, 300);
+        });
+    });
+    </script>
+
+</body>
+</html>
